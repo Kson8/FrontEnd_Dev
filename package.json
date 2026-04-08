@@ -1,0 +1,11 @@
+{
+	"homepage": "https://kson.github.io/FrontEnd_Dev",
+	"dependencies": {
+		"gh-pages": "^6.3.0"
+	},
+	"scripts": {
+		"build": "mkdir dist && copy index.html dist/ && xcopy css dist\\css /E /I && xcopy images dist\\images /E /I && xcopy js dist\\js /E /I",
+		"deploy": "npm run build && gh-pages -d dist"
+	}
+}
+
